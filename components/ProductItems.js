@@ -25,7 +25,6 @@ export default function ProductItems({ product }) {
           Add to cart
         </button>
       </div>
-       
     </div>
   );
 }
