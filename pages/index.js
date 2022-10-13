@@ -1,6 +1,3 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
 import ProductItems from '../components/ProductItems';
 import data from '../utils/data';
 import Layout from '../components/Layout';
