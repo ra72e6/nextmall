@@ -70,7 +70,10 @@ export default function ProductScreen() {
               <div>Status</div>
               <div>{product.countInStock > 0 ? 'In stock' : 'Unavailable'}</div>
             </div>
-            <button className="primary-button w-full" onClik={addToCartHandler}>
+            <button
+              className="primary-button w-full"
+              onClick={addToCartHandler}
+            >
               카드에 넣기
             </button>
           </div>
