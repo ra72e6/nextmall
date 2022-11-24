@@ -10,13 +10,14 @@ export default function ProductScreen() {
   const { state, dispatch } = useContext(Store);
   const { query } = useRouter();
   const { slug } = query;
+  const router = useRouter();
   const product = data.products.find((x) => x.slug === slug);
   console.log(product);
 
   if (!product) {
     return <div>Product Not Found. 그런 상품이 없습니다.</div>;
   }
-  const router = useRouter();
+
   const addToCartHandler = () => {
     const existItem = state.cart.cartItems.find((x) => x.slug === product.slug);
     const quantity = existItem ? existItem.quantity + 1 : 1;
